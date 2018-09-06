@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nyc mocha"
+    "test": "nyc mocha test/**/*.test.ts"
   },
   "author": "tobias.peters@kreativeffekt.at",
   "license": "MIT",

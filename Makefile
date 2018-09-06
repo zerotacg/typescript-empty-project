@@ -21,4 +21,4 @@ test: node_modules
 	$(MOCHA)
 
 test.unit: node_modules
-	$(MOCHA) test/unit
+	$(MOCHA) test/unit/**/*.test.ts
