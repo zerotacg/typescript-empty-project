@@ -1,0 +1,5 @@
+--recursive
+--compilers ts:ts-node/register,js:ts-node/register
+--require ts-node/register
+--require source-map-support/register
+--watch-extensions js,ts
