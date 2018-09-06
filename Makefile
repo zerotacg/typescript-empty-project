@@ -18,7 +18,7 @@ node_modules: package.json
 	$(TOUCH) $@
 
 test: node_modules
-	$(MOCHA)
+	$(MOCHA) test/**/*.test.ts
 
 test.unit: node_modules
 	$(MOCHA) test/unit/**/*.test.ts
