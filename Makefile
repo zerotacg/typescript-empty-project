@@ -5,7 +5,7 @@ RM = rm
 TOUCH = touch
 
 .DEFAULT_GOAL := default
-.PHONY: clean dependency test
+.PHONY: clean dependency test test.unit
 
 default:
 
@@ -18,4 +18,7 @@ node_modules: package.json
 	$(TOUCH) $@
 
 test: node_modules
-	$(MOCHA) --recursive test
+	$(MOCHA)
+
+test.unit: node_modules
+	$(MOCHA) test/unit
