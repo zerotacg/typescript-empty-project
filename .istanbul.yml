@@ -1,0 +1,6 @@
+verbose: false
+instrumentation:
+    root: dist/build/src
+    include-all-sources: true
+reporting:
+    print: summary
